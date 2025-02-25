@@ -1,0 +1,7 @@
+<p>{{ document?.properties?.['dc:title'] }}</p>
+@if (document && isPicture(document)) {
+  <img [src]="getPictureUrl(document)" alt="preview" />
+} @else if (safePreviewUrl) {
+  <iframe [src]="safePreviewUrl" name="preview" title="preview"></iframe>
+}
+<a [routerLink]="['']">Back</a>

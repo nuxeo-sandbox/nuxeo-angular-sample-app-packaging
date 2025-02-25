@@ -1,0 +1,6 @@
+<div class="h-screen">
+  <h1 class="h-1/12 text-3xl font-bold underline">Hello {{ user ? user.id : '???' }}</h1>
+  <div class="max-h-11/12 overflow-auto">
+    <router-outlet></router-outlet>
+  </div>
+</div>

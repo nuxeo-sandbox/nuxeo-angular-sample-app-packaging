@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.labs
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-angular-sample-web
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: nuxeo-angular-sample-web;singleton=true
+Nuxeo-Component: OSGI-INF/nuxeo-angular-sample-auth-contrib.xml

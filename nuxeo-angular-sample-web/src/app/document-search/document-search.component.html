@@ -1,0 +1,18 @@
+<div>
+  <div [hidden]="isDetailedDisplayed">
+    <form [formGroup]="searchForm" (submit)="search()">
+      <input id="fulltext" type="search" placeholder="Search for something" formControlName="fulltext" />
+      <button class="button" type="submit">Search</button>
+      <button class="button" type="reset" (click)="onReset()">Reset</button>
+    </form>
+    <div #scrolling>
+      @for (document of documents?.entries; track document.uid) {
+        <section>
+          <a [routerLink]="['doc', document.uid]">{{ document.title }}</a>
+          <img [src]="document?.contextParameters?.thumbnail?.url" title="thumbnail" alt="thumbnail" />
+        </section>
+      }
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
