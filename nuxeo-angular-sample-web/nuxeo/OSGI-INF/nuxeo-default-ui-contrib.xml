@@ -1,0 +1,13 @@
+<component name="org.nuxeo.labs.app.default.ui">
+
+  <extension target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService" point="loginScreen">
+    <loginScreenConfig>
+      <startupPages>
+        <startupPage id="angular-app" priority="200">
+          <path>app/</path>
+        </startupPage>
+      </startupPages>
+    </loginScreenConfig>
+  </extension>
+
+</component>
