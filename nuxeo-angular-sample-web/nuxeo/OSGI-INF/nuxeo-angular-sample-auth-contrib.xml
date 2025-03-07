@@ -1,4 +1,4 @@
-<component name="org.nuxeo.labs.authentication.polymer.nuxeo-angular-sample">
+<component name="org.nuxeo.labs.app.authentication">
 
   <extension point="startURL" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
     <startURLPattern>
