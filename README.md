@@ -46,7 +46,7 @@ All the nuxeo configuration is located in the [nuxeo](/nuxeo-angular-sample-web/
 There are 4 different configuration items in this sample project:
 
 - Set the authentication method for the application  [here](https://github.com/nuxeo-sandbox/nuxeo-angular-sample-app-packaging/blob/1917215d03dee05474955142db8a401f22c29f7a/nuxeo-angular-sample-web/nuxeo/OSGI-INF/deployment-fragment.xml#L11)
-- Set /nuxeo/app/ as an application path that the login page can redirect too upon sucessful authentication [here](/nuxeo-angular-sample-web/nuxeo/OSGI-INF/nuxeo-angular-sample-auth-contrib.xml)
+- Set /nuxeo/app/ as an application path that the login page can redirect to upon sucessful authentication [here](/nuxeo-angular-sample-web/nuxeo/OSGI-INF/nuxeo-angular-sample-auth-contrib.xml)
 - Set /nuxeo/app/ to be the default UI [here](/nuxeo-angular-sample-web/nuxeo/OSGI-INF/nuxeo-default-ui-contrib.xml)
 - Support the angular browser router by rewriting all non file URL to return index.html using the Tomcat REWRITE valve (useful for development, but typically set up at the reverse proxy level for other environments) [here](https://github.com/nuxeo-sandbox/nuxeo-angular-sample-app-packaging/blob/1917215d03dee05474955142db8a401f22c29f7a/nuxeo-angular-sample-web/nuxeo/OSGI-INF/deployment-fragment.xml#L21)
 
