@@ -24,7 +24,7 @@ Then open [http://localhost:8080](http://localhost:8080)
 
 ## How to publish to the nuxeo marketplace package
 
-If you wish to publish your app package in your private space on the nuxeo marketplace, this can be done using the marketplace UI or using the [rest API](https://doc.nuxeo.com/studio/delivering-a-customization-package-through-the-nuxeo-marketplace/):
+If you wish to publish your app package in your private space on the nuxeo marketplace, this can be done using the marketplace UI or using the [REST API](https://doc.nuxeo.com/studio/delivering-a-customization-package-through-the-nuxeo-marketplace/#using-the-rest-api):
 
 ```bash
 curl -u CONNECT_USER:CONNECT_TOKEN \
