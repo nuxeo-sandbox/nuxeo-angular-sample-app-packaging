@@ -14,11 +14,23 @@ mvn clean install
 
 ## How to run
 
+This project includes the build of a custom nuxeo docker image where the sample angular application package is pre-installed
+
 ```bash
 docker-compose up -d
 ```
 
 Then open [http://localhost:8080](http://localhost:8080)
+
+## How to publish to the nuxeo marketplace package
+
+If you wish to publish your app package in your private space on the nuxeo marketplace, this can be done using the marketplace UI or using the [rest API](https://doc.nuxeo.com/studio/delivering-a-customization-package-through-the-nuxeo-marketplace/):
+
+```bash
+curl -u CONNECT_USER:CONNECT_TOKEN \
+            -F package=@nuxeo-angular-package/target/nuxeo-angular-sample-package-VERSION.zip \
+            "https://connect.nuxeo.com/nuxeo/site/marketplace/upload?batch=true&supported=false&orgId=ORG_ID"
+```
 
 ## Explanations
 
