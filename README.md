@@ -4,6 +4,24 @@
 
 This repository shows how to package and deploy an angular web application in the Nuxeo Platform. The most important take away is that nothing changes web developers as the packaging for the nuxeo platform doesn't iterfere with the angular developement workflow and tooling.
 
+## Pre-requisites
+
+In order to create a nuxeo marketplace package, java tooling is required:
+
+- JDK 21
+- [Maven](https://maven.apache.org/download.cgi)
+
+### Maven configuration
+
+The Nuxeo Maven repositories must be configured in order to be able to download the private artifacts. This project contains a sample maven configuration file that can be used as a starting point.
+
+```bash
+cp resources/settings.xml ~/.m2/settings.xml
+```
+
+Open the `~/.m2/settings.xml` file with a text editor and set the username and password for the maven-private repository. The [username/password](https://doc.nuxeo.com/corg/maven-usage/#maven-usage-for-lts-2023) are the same as the ones used for the nuxeo private docker repository.
+
+
 ## How to build
 
 ```bash
