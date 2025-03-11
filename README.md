@@ -21,7 +21,6 @@ cp resources/settings.xml ~/.m2/settings.xml
 
 Open the `~/.m2/settings.xml` file with a text editor and set the username and password for the maven-private repository. The [username/password](https://doc.nuxeo.com/corg/maven-usage/#maven-usage-for-lts-2023) are the same as the ones used for the nuxeo private docker repository.
 
-
 ## How to build
 
 ```bash

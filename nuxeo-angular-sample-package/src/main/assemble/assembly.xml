@@ -112,8 +112,7 @@
         <var
           name="install.templates"
           value="${line.separator}
-  &lt;copy dir=&quot;${package.root}/install/templates&quot; todir=&quot;${env.templates}&quot; overwrite=&quot;true&quot; /&gt;${line.separator}
-  &lt;config addtemplate=&quot;nuxeo-angular-sample&quot; /&gt;${line.separator}" />
+  &lt;copy dir=&quot;${package.root}/install/templates&quot; todir=&quot;${env.templates}&quot; overwrite=&quot;true&quot; /&gt;${line.separator}" />
       </then>
     </if>
 
@@ -136,7 +135,7 @@
     <!-- cleanups -->
     <delete dir="${outdir}/marketplace" failonerror="false" />
     <delete dir="${outdir}/nxr" failonerror="false" />
-    <delete file="${outdir}/nuxeo-nxr-server-${maven.project.version}.zip" failonerror="false" />
+    <delete file="${outdir}/nuxeo-nxr-server-${nuxeo.platform.version}.zip" failonerror="false" />
     <delete file="${outdir}/nxr-${maven.project.version}.zip" failonerror="false" />
   </target>
 
