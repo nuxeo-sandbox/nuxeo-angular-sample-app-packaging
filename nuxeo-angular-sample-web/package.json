@@ -14,7 +14,7 @@
     "lint": "ng lint",
     "format": "npx prettier --write \"src/**/*.{ts,html,css,json}\"",
     "check-format": "npx prettier --check \"src/**/*.{ts,html,css,json}\"",
-    "prepare": "husky"
+    "prepare": "cd .. && husky nuxeo-angular-sample-web/.husky"
   },
   "private": true,
   "dependencies": {
