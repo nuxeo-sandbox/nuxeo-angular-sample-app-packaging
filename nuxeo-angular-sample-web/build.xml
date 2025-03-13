@@ -19,8 +19,24 @@
     <exec executable="${cmd.npm}" failonerror="true">
       <arg value="run" />
       <arg value="build" />
-      <env key="MAVEN_BUILD_DIR" value="${project.build.directory}" />
     </exec>
+  </target>
+
+  <target name="jsp" depends="build">
+    <exec executable="node" failonerror="true">
+      <arg value="./nuxeo_build_tools/htmlToJsp.mjs" />
+    </exec>
+  </target>
+
+  <target name="package" depends="jsp">
+    <copy todir="target/classes/nuxeo.war/app">
+      <fileset dir="./dist/nuxeo-angular-sample/browser">
+        <exclude name="index.html"/>
+      </fileset>
+    </copy>
+     <copy todir="target/classes">
+      <fileset dir="./nuxeo"></fileset>
+    </copy>
   </target>
 
 </project>

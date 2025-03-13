@@ -32,7 +32,7 @@
             <phase>process-resources</phase>
             <configuration>
               <target>
-                <ant antfile="${basedir}/build.xml" dir="${basedir}"></ant>
+                <ant antfile="${basedir}/build.xml" dir="${basedir}" target="package"></ant>
               </target>
             </configuration>
             <goals>

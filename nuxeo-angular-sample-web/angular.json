@@ -29,7 +29,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/nuxeo/app/",
               "budgets": [
                 {
                   "type": "initial",

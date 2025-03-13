@@ -20,7 +20,7 @@
   <!--  Angular browser router support -->
   <extension target="rewrite#RULE">
     RewriteCond %{REQUEST_PATH} ^/app/[^.]*(html?)?$
-    RewriteRule ^(.*)$ /app/index.html [L]
+    RewriteRule ^(.*)$ /app/index.jsp [L]
   </extension>
 
 </fragment>
